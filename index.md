@@ -1,5 +1,4 @@
 # tabletopmanoa.github.io
- ### Installation Notes: In order to run, install meteor and 
 
 ## Database
 
@@ -17,3 +16,8 @@
 ### Player Database
   * UserID (Defined by UH)
   * Game ID
+
+
+
+## Installation Notes: 
+ 
