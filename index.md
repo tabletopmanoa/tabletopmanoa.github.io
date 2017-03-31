@@ -1,5 +1,5 @@
 # Table of contents
-* [Games Database](### Games Database)
+* [Database](## Database)
 * [Installation](## Installation Notes: )
 
 ## Database
