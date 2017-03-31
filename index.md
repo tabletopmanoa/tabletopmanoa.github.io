@@ -1,6 +1,16 @@
 # Table of Contents
+* [Project Goals](#project-goals)
+* [Eventual Goals](#eventual-goals)
 * [Database](#database)
 * [Installation](#installation-notes)
+
+## Project Goals
+  * User can browse games by calendar
+  * User can browse games by system
+  * User can select games to play
+  * User can manage selection of games playing
+  * User can coordinate own game
+  * User can manage games coordinated 
 
 ## Database
 
