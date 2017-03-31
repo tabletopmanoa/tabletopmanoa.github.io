@@ -1,6 +1,6 @@
 # Table of Contents
-* [Database](## Database)
-* [Installation](## Installation Notes: )
+* [Database](##database)
+* [Installation](##installation-notes:)
 
 ## Database
 
