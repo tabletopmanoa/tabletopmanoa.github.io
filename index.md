@@ -1,7 +1,9 @@
+Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging from Monopoly and Spades to WarMachine and Pathfinder.
+
 # Table of Contents
 * [Project Goals](#project-goals)
-* [Eventual Goals](#eventual-goals)
 * [Database](#database)
+* [Mockup Page](#mockup-page)
 * [Installation](#installation-notes)
 
 ## Project Goals
@@ -11,11 +13,12 @@
   * User can manage selection of games playing
   * User can coordinate own game
   * User can manage games coordinated 
+  * A [database](#database) will be created to represent games already scheduled
 
 ## Database
 
 ### Games Database
- The schema determined to kee the 
+ The schema determined to keep the 
  
   * Game ID
   * Creator User ID (Defined by UH)
@@ -23,13 +26,48 @@
   * Reoccuring (true/false)
   * Date
   * Time
-  * 
+  
 
 ### Player Database
   * UserID (Defined by UH)
   * Game ID
 
+## Mockup Pages
+These pages are the basis of our starting point for our project. There will be a lot of cleanup involved in the pages (remove image on menu bar, change background, remove colored padding around cards) which will be updated as progress occures.
 
+### Landing Platform
+Login required
+![image](https://cloud.githubusercontent.com/assets/17040099/24214896/0526bccc-0edb-11e7-9813-a874a2da758d.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/24214955/401aecc2-0edb-11e7-87b9-d633ad610d30.png)
+
+
+### Login Page
+Access granted only to students. Allows students comfort in knowing the general demographic of the other players
+![image](https://cloud.githubusercontent.com/assets/17040099/24215014/7f8513f6-0edb-11e7-9885-ae784b995aca.png)
+
+
+### Home Page
+Welcome for users and instructions
+![image](https://cloud.githubusercontent.com/assets/17040099/24237118/12fbb802-0f49-11e7-9f85-e0ee5442c75e.png)
+
+
+### Manage Games
+If users are following a game, the link will be here. Also would be the information on games they are in charge of.
+![image](https://cloud.githubusercontent.com/assets/17040099/24240744/c5a59060-0f56-11e7-842e-3eb2284f0af9.png)
+
+
+### Coordinate a Game
+Allows a student to set up their own games. Would like the 'meeting date' to be similar to the scheduling app on Google Calendar (calendar dropdown, recurrence option with day of week, clock selection)
+![image](https://cloud.githubusercontent.com/assets/17040099/24237220/79f1e7fc-0f49-11e7-8559-762d89b1ab2c.png)
+
+
+### Browse Games 
+Four main categories of the games allows users to select all. Games that are active (not past their play date) in the selected categories should pop up. Selecting the game will give detailed information on the game (the information filled out from coordinate game) and the user can save the game (which will allow for an email push)
+![image](https://cloud.githubusercontent.com/assets/17040099/24240183/d02f91c2-0f54-11e7-94f3-9daff2ded72d.png)
+
+### Calendar
+Calendar shows all games planned in the month. Allows user to browse by date. If overcrowding of events occur, calendar will be separated by category and then game. Initially all games should be shown to prevent the site from looking too 'empty'.
+![image](https://cloud.githubusercontent.com/assets/17040099/24237273/b6eb2cc2-0f49-11e7-8501-43e835ac8ca2.png)
 
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
