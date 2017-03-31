@@ -24,7 +24,7 @@
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, [download a copy of tabltopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/meteor-application-template/archive/master.zip), or clone it using git.
+Second, [download a copy of tabletopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website), or clone it using git.
   
 Third, cd into the app/ directory and install libraries with:
 
