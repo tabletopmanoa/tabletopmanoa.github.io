@@ -1,4 +1,4 @@
-# Table of contents
+# Table of Contents
 * [Database](## Database)
 * [Installation](## Installation Notes: )
 
