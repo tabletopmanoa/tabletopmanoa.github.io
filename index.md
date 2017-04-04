@@ -3,7 +3,7 @@ Tabletop Manoa is an application designed to allow those in the UH community to 
 # Table of Contents
 * [Project Goals](#project-goals)
 * [Database](#database)
-* [Mockup Page](#mockup-page)
+* [Mockup Pages](#mockup-pages)
 * [Installation](#installation-notes)
 
 ## Project Goals
@@ -67,7 +67,8 @@ Four main categories of the games allows users to select all. Games that are act
 
 ### Calendar
 Calendar shows all games planned in the month. Allows user to browse by date. If overcrowding of events occur, calendar will be separated by category and then game. Initially all games should be shown to prevent the site from looking too 'empty'.
-![image](https://cloud.githubusercontent.com/assets/17040099/24237273/b6eb2cc2-0f49-11e7-8501-43e835ac8ca2.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/24636614/49f79092-1877-11e7-96d0-133380bb0503.png)
+
 
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
