@@ -37,7 +37,7 @@ These pages are the basis of our starting point for our project. There will be a
 
 ### Landing Platform
 Login required
-![image](https://cloud.githubusercontent.com/assets/17040099/24745623/0995be52-1a52-11e7-8e0d-1ca74b6664b0.png)
+<img class="ui centered image" src="../projectImages/landingPage.pdf">
 
 
 ### Login Page
