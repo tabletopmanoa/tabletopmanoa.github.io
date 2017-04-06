@@ -37,8 +37,9 @@ These pages are the basis of our starting point for our project. There will be a
 
 ### Landing Platform
 Login required
-![image](https://cloud.githubusercontent.com/assets/17040099/24214896/0526bccc-0edb-11e7-9813-a874a2da758d.png)
-![image](https://cloud.githubusercontent.com/assets/17040099/24214955/401aecc2-0edb-11e7-87b9-d633ad610d30.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/24745282/d3c75386-1a50-11e7-9eb9-57fca7d9cc38.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/24745303/e804c374-1a50-11e7-905d-c80a2d16b021.png)
+
 
 
 ### Login Page
