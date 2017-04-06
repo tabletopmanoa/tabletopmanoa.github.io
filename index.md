@@ -37,7 +37,7 @@ These pages are the basis of our starting point for our project. There will be a
 
 ### Landing Platform
 Login required
-<img class="ui centered image" src="../projectImages/landingPage.pdf">
+<img class="ui centered image" src="../projectImages/landingPage.jpg">
 
 
 ### Login Page
