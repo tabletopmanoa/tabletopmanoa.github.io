@@ -1,10 +1,15 @@
-Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging from Monopoly and Spades to WarMachine and Pathfinder.
-
 # Table of Contents
+* [About TableTop Manoa](#about-tabletop-manoa)
 * [Project Goals](#project-goals)
 * [Database](#database)
 * [Mockup Pages](#mockup-pages)
 * [Installation](#installation-notes)
+* [Development history](#development-history)
+  * [Milestone 1: Mockup development](#milestone-1-mockup-development)
+  
+## About Tabletop MAnoa
+
+Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging from Monopoly and Spades to WarMachine and Pathfinder.
 
 ## Project Goals
   * User can browse games by calendar
@@ -90,3 +95,20 @@ Fifth, run the system with:
 ```
 $ meteor npm run start
 ```
+
+## Development History
+
+### Milestone 1: Mockup Development
+
+This milestone started on Apr 4, 2017 and ended on Apr 13, 2017.
+
+The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages.
+
+
+Milestone 1 was implemented as [BowFolio GitHub Milestone M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM1)::
+
+
+Milestone 1 consisted of six issues, and progress was managed via the [BowFolio GitHub Project M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/1):
+
+Each issue was implemented in its own branch, and merged into master when completed:
+
