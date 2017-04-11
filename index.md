@@ -4,10 +4,10 @@
 * [Database](#database)
 * [Mockup Pages](#mockup-pages)
 * [Installation](#installation-notes)
-* [Development history](#development-history)
+* [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   
-## About Tabletop MAnoa
+## About Tabletop Manoa
 
 Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging from Monopoly and Spades to WarMachine and Pathfinder.
 
