@@ -2,46 +2,16 @@
 * [About TableTop Manoa](#about-tabletop-manoa)
 * [Project Goals](#project-goals)
 * [Database](#database)
-* [Mockup Pages](#mockup-pages)
-* [Installation](#installation-notes)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
+* [Installation](#installation-notes)
   
 ## About Tabletop Manoa
 
 Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging from Monopoly and Spades to WarMachine and Pathfinder.
 
-## Project Goals
-  * User can browse games by calendar
-  * User can browse games by system
-  * User can select games to play
-  * User can manage selection of games playing
-  * User can coordinate own game
-  * User can manage games coordinated 
-  * A [database](#database) will be created to represent games already scheduled
-
-## Database
-
-### Games Database
- The schema determined to keep the 
- 
-  * Game ID
-  * Creator User ID (Defined by UH)
-  * System
-  * Reoccuring (true/false)
-  * Date
-  * Time
-  
-
-### Player Database
-  * UserID (Defined by UH)
-  * Game ID
-
-## Mockup Pages
-These pages are the basis of our starting point for our project. There will be a lot of cleanup involved in the pages (remove image on menu bar, change background, remove colored padding around cards) which will be updated as progress occures.
-
 ### Landing Platform
-Login required
+Anyone with a UH account can login with the login button
 <img src="../projectImages/landingPage.jpg">
 
 
@@ -73,6 +43,64 @@ Four main categories of the games allows users to select all. Games that are act
 Calendar shows all games planned in the month. Allows user to browse by date. If overcrowding of events occur, calendar will be separated by category and then game. Initially all games should be shown to prevent the site from looking too 'empty'.
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744382/93a5dc44-1a4d-11e7-98c8-9d595a8f0e0a.png)
 
+
+
+
+## Project Goals
+  * User can browse games by calendar
+  * User can browse games by system
+  * User can select games to play
+  * User can manage selection of games playing
+  * User can coordinate own game
+  * User can manage games coordinated 
+  * A [database](#database) will be created to represent games already scheduled
+
+## Database
+
+### Games Database
+ The schema determined to keep the 
+ 
+  * Game ID
+  * Creator User ID (Defined by UH)
+  * System
+  * Reoccuring (true/false)
+  * Date
+  * Time
+  
+
+### Player Database
+  * UserID (Defined by UH)
+  * Game ID
+
+## Development History
+The development process for Tabletop Manoa conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f16/modules/project-management/) practices. In a nutshell, development consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
+
+The following sections document the development history of Tabletop Manoa.
+
+### Milestone 1: Mockup Development
+
+This milestone started on Apr 4, 2017 and ended on Apr 13, 2017.
+
+The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages.
+
+Mockups for the following four pages were implemented during M1:
+
+<img width="200px" src="../projectImages/landingPage.jpg"/>
+<img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24215014/7f8513f6-0edb-11e7-9885-ae784b995aca.png"/>
+<img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24744263/1f7f18c6-1a4d-11e7-9740-2d0928f52e1b.png"/>
+<img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24744277/2fbb2ce8-1a4d-11e7-97bb-158c303cdb91.png"/>
+<img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24744330/632d3346-1a4d-11e7-8a8b-ff0925193261.png"/>
+<img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24744364/828a8fcc-1a4d-11e7-95e0-4201a4f3d449.png"/>
+<img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24744382/93a5dc44-1a4d-11e7-98c8-9d595a8f0e0a.png"/>
+
+
+Milestone 1 was implemented as [Tabletop Manoa GitHub Milestone M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM1)::
+
+
+Milestone 1 consisted of six issues, and progress was managed via the [Tabletop Manoa GitHub Project M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/1):
+
+Each issue was implemented in its own branch, and merged into master when completed:
+
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
 
@@ -95,20 +123,4 @@ Fifth, run the system with:
 ```
 $ meteor npm run start
 ```
-
-## Development History
-
-### Milestone 1: Mockup Development
-
-This milestone started on Apr 4, 2017 and ended on Apr 13, 2017.
-
-The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages.
-
-
-Milestone 1 was implemented as [BowFolio GitHub Milestone M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM1)::
-
-
-Milestone 1 consisted of six issues, and progress was managed via the [BowFolio GitHub Project M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/1):
-
-Each issue was implemented in its own branch, and merged into master when completed:
 
