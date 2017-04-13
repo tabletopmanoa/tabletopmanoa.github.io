@@ -4,7 +4,7 @@
 * [Database](#database)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
-  * [Milestone 2: DataBase development](#milestone-2-database-development)
+  * [Milestone 2: Database development](#milestone-2-database-development)
 * [Installation](#installation-notes)
   
 ## About Tabletop Manoa
@@ -112,7 +112,7 @@ Once this milestone was complete, the program was deployed on [Galaxy](https://g
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24992298/5bb9934c-1fbc-11e7-9501-afda2a9d8706.png)
 
-## Milestone 2: DataBase development
+## Milestone 2: Database development
 
 This milestone started on April 13, 2017 and is scheduled to end on April 25, 2017.
 
