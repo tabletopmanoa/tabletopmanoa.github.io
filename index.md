@@ -122,7 +122,7 @@ For this milestone, we will implement a set of mocha tests for the data model cl
 
 Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
 
-Milestone 2 consists of seven issues, and progress is being managed via the [Tabletop Manoa Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
+Milestone 2 consists of six issues, and progress is being managed via the [Tabletop Manoa Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
 
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
