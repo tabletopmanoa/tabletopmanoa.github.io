@@ -95,12 +95,12 @@ Mockups for the following four pages were implemented during M1:
 <img width="200px" src="https://cloud.githubusercontent.com/assets/17040099/24744382/93a5dc44-1a4d-11e7-98c8-9d595a8f0e0a.png"/>
 
 
-Milestone 1 was implemented as [Tabletop Manoa GitHub Milestone M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM1)::
+Milestone 1 was implemented as [Tabletop Manoa Milestone M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM1)::
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24991980/51562ab6-1fba-11e7-9803-1e83840daead.png)
 
 
-Milestone 1 consisted of six issues, and progress was managed via the [Tabletop Manoa GitHub Project M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/1):
+Milestone 1 consisted of six issues, and progress was managed via the [Tabletop Manoa Project M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/1):
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24992097/31fb786e-1fbb-11e7-830e-b46fd435465e.png)
 
@@ -120,9 +120,9 @@ The primary goal of Milestone 2 is to implement the database model: the underlyi
  
 For this milestone, we will implement a set of mocha tests for the data model classes. These tests will make sure we can create, manipulate, and delete the data model documents successfully. These tests will be documented upon completion.
 
-Milestone 2 is implemented as [BowFolio GitHub Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
+Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
 
-Milestone 2 consists of six issues, and progress is being managed via the [BowFolio GitHub Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
+Milestone 2 consists of six issues, and progress is being managed via the [Tabletop Manoa Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
 
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
