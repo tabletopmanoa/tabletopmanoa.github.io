@@ -4,7 +4,7 @@
 * [Database](#database)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
-   * [Milestone 2: DataBase development](#milestone-2-database-development)
+  * [Milestone 2: DataBase development](#milestone-2-database-development)
 * [Installation](#installation-notes)
   
 ## About Tabletop Manoa
@@ -108,7 +108,7 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24992142/77364878-1fbb-11e7-8b6e-9ed4bf697330.png)
 
-Once this milestone was complete, the program was deployed on [Galaxy] (https://galaxy.meteor.com/app/tabletopmanoa.meteorapp.com)
+Once this milestone was complete, the program was deployed on [Galaxy](https://galaxy.meteor.com/app/tabletopmanoa.meteorapp.com) 
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24992298/5bb9934c-1fbc-11e7-9501-afda2a9d8706.png)
 
