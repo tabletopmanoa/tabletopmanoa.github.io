@@ -116,16 +116,13 @@ Once this milestone was complete, the program was deployed on [Galaxy] (https://
 
 This milestone started on April 13, 2017 and is scheduled to end on April 25, 2017.
 
-The goal of Milestone 2 was to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
+The primary goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We shall the data model as a set of Javascript classes. The GamesCollection and CategoryCollection classes provide the persistent data structures useful for Tabletop Manoa. Once the database model is complete, testing the database and then connecting the database to the forms will occur. 
  
-Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  These tests are documented above.
+For this milestone, we will implement a set of mocha tests for the data model classes. These tests will make sure we can create, manipulate, and delete the data model documents successfully. These tests will be documented upon completion.
 
-Milestone 2 was implemented as [BowFolio GitHub Milestone M2](https://github.com/bowfolios/bowfolios/milestone/2)::
+Milestone 2 is implemented as [BowFolio GitHub Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
 
-![](images/m2-milestone.png)
-
-
-Milestone 2 consisted of two issues, and progress was managed via the [BowFolio GitHub Project M2](https://github.com/bowfolios/bowfolios/projects/2):
+Milestone 2 consists of six issues, and progress is being managed via the [BowFolio GitHub Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
 
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
