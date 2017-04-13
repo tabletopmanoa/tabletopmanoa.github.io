@@ -4,6 +4,7 @@
 * [Database](#database)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
+   * [Milestone 2: DataBase development](#milestone-2-database-development)
 * [Installation](#installation-notes)
   
 ## About Tabletop Manoa
@@ -96,10 +97,35 @@ Mockups for the following four pages were implemented during M1:
 
 Milestone 1 was implemented as [Tabletop Manoa GitHub Milestone M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM1)::
 
+![image](https://cloud.githubusercontent.com/assets/17040099/24991980/51562ab6-1fba-11e7-9803-1e83840daead.png)
+
 
 Milestone 1 consisted of six issues, and progress was managed via the [Tabletop Manoa GitHub Project M1](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/1):
 
+![image](https://cloud.githubusercontent.com/assets/17040099/24992097/31fb786e-1fbb-11e7-830e-b46fd435465e.png)
+
 Each issue was implemented in its own branch, and merged into master when completed:
+
+![image](https://cloud.githubusercontent.com/assets/17040099/24992142/77364878-1fbb-11e7-8b6e-9ed4bf697330.png)
+
+Once this milestone was complete, the program was deployed on [Galaxy] (https://galaxy.meteor.com/app/tabletopmanoa.meteorapp.com)
+
+![image](https://cloud.githubusercontent.com/assets/17040099/24992298/5bb9934c-1fbc-11e7-9501-afda2a9d8706.png)
+
+## Milestone 2: DataBase development
+
+This milestone started on April 13, 2017 and is scheduled to end on April 25, 2017.
+
+The goal of Milestone 2 was to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
+ 
+Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  These tests are documented above.
+
+Milestone 2 was implemented as [BowFolio GitHub Milestone M2](https://github.com/bowfolios/bowfolios/milestone/2)::
+
+![](images/m2-milestone.png)
+
+
+Milestone 2 consisted of two issues, and progress was managed via the [BowFolio GitHub Project M2](https://github.com/bowfolios/bowfolios/projects/2):
 
 ## Installation Notes: 
 First, [install Meteor](https://www.meteor.com/install).
