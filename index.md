@@ -2,6 +2,23 @@
 * [About TableTop Manoa](#about-tabletop-manoa)
 * [Project Goals](#project-goals)
 * [Database](#database)
+* [Application design](#application-design)
+  * [Directory structure](#directory-structure)
+  * [Import conventions](#import-conventions)
+  * [Naming conventions](#naming-conventions)
+  * [Data model](#data-model)
+  * [CSS](#css)
+  * [Routing](#routing)
+  * [Authentication](#authentication)
+  * [Authorization](#authorization)
+  * [Configuration](#configuration)
+  * [Quality Assurance](#quality-assurance)
+    * [ESLint](#eslint)
+    * [Data model unit tests](#data-model-unit-tests)
+    * [JSDoc](#JSDoc) [Quality Assurance](#quality-assurance)
+    * [ESLint](#eslint)
+    * [Data model unit tests](#data-model-unit-tests)
+    * [JSDoc](#JSDoc)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Database development](#milestone-2-database-development)
@@ -72,9 +89,147 @@ Calendar shows all games planned in the month. Allows user to browse by date. If
 ### Player Database
   * UserID (Defined by UH)
   * Game ID
+  
+# Application Design
+
+## Directory structure
+
+The top-level directory structure contains:
+
+```
+app/        # holds the Meteor application sources
+config/     # holds configuration files, such as settings.development.json
+.gitignore  # don't commit IntelliJ project files, node_modules, and settings.production.json
+```
+This structure separates configuration files (such as the settings files) in the config/ directory from the actual Meteor application in the app/ directory.
+
+The app/ directory will be discussed in depth upon project completion
+
+## Import conventions
+
+This system adheres to the Meteor 1.4 guideline of putting all application code in the imports/ directory, and using client/main.js and server/main.js to import the code appropriate for the client and server in an appropriate order.
+
+This system accomplishes client and server-side importing in a different manner than most Meteor sample applications. In this system, every imports/ subdirectory containing any Javascript or HTML files has a top-level index.js file that is responsible for importing all files in its associated directory.   
+
+Then, client/main.js and server/main.js are responsible for importing all the directories containing code they need. An expample will be used once the project is complete.
+
+## Naming conventions
+
+This system adopts the following naming conventions:
+
+  * Files and directories are named in all lowercase, with words separated by hyphens. Example: accounts-config.js
+  * "Global" Javascript variables (such as collections) are capitalized. Example: Games.
+  * Other Javascript variables are camel-case. Example: addGame.
+  * Templates representing pages are capitalized, with words separated by underscores. Example: Directory_Page. The files for this template are lower case, with hyphens rather than underscore. Example: directory-page.html, directory-page.js.
+  * Routes to pages are named the same as their corresponding page. Example: Directory_Page.
+
+  
+
+## Data model
+
+The TableTop Manoa data model is implemented by two Javascript classes: [GamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.js) and [UsertoGamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.js). Both of these classes encapsulate a MongoDB collection with the same name and export a single variable (Games and UsertoGames)that provides access to that collection. 
+
+Any part of the system that manipulates the Tabletop Manoa data model imports the Games or UsertoGames variable, and invokes methods of that class to get or set data.
+
+There are many common operations on MongoDB collections. To simplify the implementation, the GamesCollection and UsertoGamesCollection classes inherit from the [BaseCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/base/BaseCollection.js) class.
+
+The [BaseUtilities](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/base/BaseUtilities.js) file contains functions that operate across both classes. 
+
+Both GamesCollection and UsertoGamesCollection have Mocha unit tests in [GamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.test.js) and [UsertoGamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.test.js).
+
+You can run these tests using the following command:
+
+```
+meteor npm run test-watch
+```
+You can see the output by retrieving http://localhost:3100 in your browser. Here is an example run:
+
+![image](insert image url)
+
+## CSS
+
+The application uses the [Semantic UI](http://semantic-ui.com/) CSS framework. 
+
+The Semantic UI theme files are located in [app/client/lib/semantic-ui](https://github.com/ics-software-engineering/meteor-application-template/tree/master/app/client/lib/semantic-ui) directory. Because they are located in the client/ directory and not the imports/ directory, they do not need to be explicitly imported to be loaded. (Meteor automatically loads all files into the client that are located in the client/ directory). 
+
+Note that the user pages contain a menu fixed to the top of the page, and thus the body element needs to have padding attached to it.  However, the landing page does not have a menu, and thus no padding should be attached to the body element on that page. To accomplish this, the [router](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/startup/client/router.js) uses "triggers" to add an remove the appropriate classes from the body element when a page is visited and then left by the user. 
+
+## Routing
+
+For display and navigation among its four pages, the application uses [Flow Router](https://github.com/kadirahq/flow-router).
+
+Routing is defined in [imports/startup/client/router.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/startup/client/router.js).
+
+BowFolios defines the following routes:
+
+  * The `/` route goes to the public landing page.
+  * The `/directory` route goes to the public directory page.
+  * The `/<user>/profile` route goes to the profile page associated with `<user>`, which is the UH account name.
+  * The `/<user>/filter` route goes to the filter page associated with `<user>`, which is the UH account name.
+
+
+## Authentication
+
+For authentication, the application uses the University of Hawaii CAS test server, and follows the approach shown in [meteor-example-uh-cas](http://ics-software-engineering.github.io/meteor-example-uh-cas/).
+
+When the application is run, the CAS configuration information must be present in a configuration file such as  [config/settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/config/settings.development.json). 
+
+Anyone with a UH account can login and use BowFolio to create a portfolio.  A profile document is created for them if none already exists for that username.
+
+## Authorization
+
+The landing and directory pages are public; anyone can access those pages.
+
+The profile and filter pages require authorization: you must be logged in (i.e. authenticated) through the UH test CAS server, and the authenticated username returned by CAS must match the username specified in the URL.  So, for example, only the authenticated user `koday` can access the pages `http://localhost:3000/koday/browseGames` and  `http://localhost:3000/koday/manage`.
+
+To prevent people from accessing pages they are not authorized to visit, template-based authorization is used following the recommendations in [Implementing Auth Logic and Permissions](https://kadira.io/academy/meteor-routing-guide/content/implementing-auth-logic-and-permissions). 
+
+The application implements template-based authorization using an If_Authorized template, defined in [If_Authorized.html](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/ui/layouts/user/if-authorized.html) and [If_Authorized.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/ui/layouts/user/if-authorized.js).
+
+## Configuration
+
+The [config](https://github.com/bowfolios/bowfolios/tree/master/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/config).
+
+The [.gitignore](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
+
+TableTop manoa checks on startup to see if it has an empty database in [initialize-database.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/startup/server/initialize-database.js), and if so, loads the file specified in the configuration file, such as [settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/config/settings.development.json).  
+
+
+
+For development purposes, a sample initialization for this database is in [initial-collection-data.json](https://github.com/bowfolios/bowfolios/blob/master/app/private/database/initial-collection-data.json).
+
+## Quality Assurance
+
+### ESLint
+
+BowFolios includes a [.eslintrc](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+
+```
+meteor npm run lint
+```
+
+ESLint should run without generating any errors.  
+
+It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
+
+### Data model unit tests
+
+BowFolios includes unit tests for the data model. You can invoke them with:
+
+```
+meteor npm run test-watch
+```
+
+To see the results, visit http://localhost:3100. Here is what a successful run looks like:
+ 
+![](instert image url)
+
+### JSDoc
+
+BowFolios supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs](https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs). 
 
 ## Development History
-The development process for Tabletop Manoa conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f16/modules/project-management/) practices. In a nutshell, development consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
+The development process for Tabletop Manoa consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
 
 The following sections document the development history of Tabletop Manoa.
 
@@ -112,13 +267,13 @@ Once this milestone was complete, the program was deployed on [Galaxy](https://g
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24992298/5bb9934c-1fbc-11e7-9501-afda2a9d8706.png)
 
-## Milestone 2: Database development
+## Milestone 2: Data model development
 
-This milestone started on April 13, 2017 and is scheduled to end on April 25, 2017.
+This milestone started on April 13, 2017 and ended April 25, 2017.
 
-The primary goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We shall the data model as a set of Javascript classes. The GamesCollection and CategoryCollection classes provide the persistent data structures useful for Tabletop Manoa. Once the database model is complete, testing the database and then connecting the database to the forms will occur. 
+The goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We constructed the data model as a set of Javascript classes. The GamesCollection and CategoryCollection classes provide the persistent data structures useful for Tabletop Manoa. 
  
-For this milestone, we will implement a set of mocha tests for the data model classes. These tests will make sure we can create, manipulate, and delete the data model documents successfully. These tests will be documented upon completion.
+For this milestone, we also created a set of mocha tests for the data model classes. These tests ensured that we can create, manipulate, and delete the data model documents successfully. The record of this test is documented in the [Quality Assurance](quality-assurance#) section above.
 
 Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
 
