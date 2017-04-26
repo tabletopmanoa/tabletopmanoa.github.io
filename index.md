@@ -2,6 +2,7 @@
 * [About TableTop Manoa](#about-tabletop-manoa)
 * [Project Goals](#project-goals)
 * [Database](#database)
+* [Installation](#installation-notes)
 * [Application design](#application-design)
   * [Directory structure](#directory-structure)
   * [Import conventions](#import-conventions)
@@ -22,7 +23,7 @@
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Database development](#milestone-2-database-development)
-* [Installation](#installation-notes)
+
   
 ## About Tabletop Manoa
 
@@ -89,6 +90,30 @@ Calendar shows all games planned in the month. Allows user to browse by date. If
 ### Player Database
   * UserID (Defined by UH)
   * Game ID
+  
+  ## Installation Notes: 
+First, [install Meteor](https://www.meteor.com/install).
+
+Second, [download a copy of tabletopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/), or clone it using git.
+  
+Third, cd into the app/ directory and install libraries with:
+
+```
+$ meteor npm install
+```
+
+Fourth, install the calendar
+
+```
+$ meteor add rzymek:fullcalendar
+```
+
+Fifth, run the system with:
+
+```
+$ meteor npm run start
+```
+
   
 # Application Design
 
@@ -273,32 +298,10 @@ This milestone started on April 13, 2017 and ended April 25, 2017.
 
 The goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We constructed the data model as a set of Javascript classes. The GamesCollection and CategoryCollection classes provide the persistent data structures useful for Tabletop Manoa. 
  
-For this milestone, we also created a set of mocha tests for the data model classes. These tests ensured that we can create, manipulate, and delete the data model documents successfully. The record of this test is documented in the [Quality Assurance](quality-assurance#) section above.
+For this milestone, we also created a set of mocha tests for the data model classes. These tests ensured that we can create, manipulate, and delete the data model documents successfully. The record of this test is documented in the [Data model unit tests](#data-model-unit-tests) section above.
 
 Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
 
 Milestone 2 consists of six issues, and progress is being managed via the [Tabletop Manoa Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
 
-## Installation Notes: 
-First, [install Meteor](https://www.meteor.com/install).
-
-Second, [download a copy of tabletopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/), or clone it using git.
-  
-Third, cd into the app/ directory and install libraries with:
-
-```
-$ meteor npm install
-```
-
-Fourth, install the calendar
-
-```
-$ meteor add rzymek:fullcalendar
-```
-
-Fifth, run the system with:
-
-```
-$ meteor npm run start
-```
 
