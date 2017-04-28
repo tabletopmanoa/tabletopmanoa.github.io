@@ -157,15 +157,6 @@ There are many common operations on MongoDB collections. To simplify the impleme
 
 Both GamesCollection and UsertoGamesCollection have Mocha unit tests in [GamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.test.js) and [UsertoGamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.test.js).
 
-You can run these tests using the following command:
-
-```
-meteor npm run test-watch
-```
-You can see the output by retrieving http://localhost:3100 in your browser. Here is an example run:
-
-![image](https://cloud.githubusercontent.com/assets/17040099/25519440/87f57f56-2b93-11e7-81b2-868b5cc774f6.png)
-
 ## CSS
 
 The application uses the [Semantic UI](http://semantic-ui.com/) CSS framework. 
