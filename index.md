@@ -282,7 +282,7 @@ Once this milestone was complete, the program was deployed on [Galaxy](https://g
 
 This milestone started on April 13, 2017 and ended April 27, 2017.
 
-The goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We constructed the data model as a set of Javascript classes. The GamesCollection and CategoryCollection classes provide the persistent data structures useful for Tabletop Manoa. 
+The goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We constructed the data model as a set of Javascript classes. The GamesCollection andUserToGamesCollection classes provide the persistent data structures useful for Tabletop Manoa. 
  
 For this milestone, we also created a set of mocha tests for the data model classes. These tests ensured that we can create, manipulate, and delete the data model documents successfully. The record of this test is documented in the [Data model unit tests](#data-model-unit-tests) section above.
 
