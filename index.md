@@ -147,7 +147,7 @@ This system adopts the following naming conventions:
 
   
 
-## Data model
+## Data model unit tests
 
 The TableTop Manoa data model is implemented by two Javascript classes: [GamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.js) and [UsertoGamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.js). Both of these classes use a MongoDB collection with the same name and export a single variable (Games and UsertoGames)that provides access to that collection. 
 
@@ -164,7 +164,7 @@ meteor npm run test-watch
 ```
 You can see the output by retrieving http://localhost:3100 in your browser. Here is an example run:
 
-![image](insert image url)
+![image](https://cloud.githubusercontent.com/assets/17040099/25519440/87f57f56-2b93-11e7-81b2-868b5cc774f6.png)
 
 ## CSS
 
