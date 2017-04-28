@@ -1,9 +1,9 @@
 # Table of Contents
 * [About TableTop Manoa](#about-tabletop-manoa)
-* [Project Goals](#project-goals)
-* [Database](#database)
-* [Installation](#installation)
-* [Application design](#application-design)
+* [User Guide](#user-guide)
+* [Developers Guide](#developers-guide)
+ * [Downloading and Installation](#downloading-and-installation)
+ * [Application design](#application-design)
   * [Directory structure](#directory-structure)
   * [Import conventions](#import-conventions)
   * [Naming conventions](#naming-conventions)
@@ -17,6 +17,7 @@
     * [ESLint](#eslint)
     * [Data model unit tests](#data-model-unit-tests)
     * [JSDoc](#JSDoc) [Quality Assurance](#quality-assurance)
+ * [Meteor Hosting](#meteor-hosting)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Data model development](#milestone-2-data-model-development)
@@ -25,7 +26,10 @@
   
 ## About Tabletop Manoa
 
-Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging from Monopoly and Spades to WarMachine and Pathfinder.
+Tabletop Manoa is an application designed to allow those in the UH community to coordinate and join in various tabletop games. The ability to do this will enable students to get together in a safe environment for fun and socialization as they play in games ranging
+from Monopoly and Spades to WarMachine and Pathfinder.
+
+# User Guide
 
 ### Landing Platform
 Anyone with a UH account can login with the login button
@@ -60,36 +64,9 @@ Four main categories of the games allows users to select all. Games that are act
 Calendar shows all games planned in the month. Allows user to browse by date. If overcrowding of events occur, calendar will be separated by category and then game. Initially all games should be shown to prevent the site from looking too 'empty'.
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744382/93a5dc44-1a4d-11e7-98c8-9d595a8f0e0a.png)
 
-
-
-
-## Project Goals
-  * User can browse games by calendar
-  * User can browse games by system
-  * User can select games to play
-  * User can manage selection of games playing
-  * User can coordinate own game
-  * User can manage games coordinated 
-  * A [database](#database) will be created to represent games already scheduled
-
-## Database
-
-### Games Database
- The schema determined to keep the 
- 
-  * Game ID
-  * Creator User ID (Defined by UH)
-  * System
-  * Reoccurring (true/false)
-  * Date
-  * Time
-  
-
-### Player Database
-  * UserID (Defined by UH)
-  * Game ID
-  
-  ## Installation 
+# Developers Guide
+   
+  ## Downloading and Installation
 First, [install Meteor](https://www.meteor.com/install).
 
 Second, [download a copy of tabletopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/), or clone it using git.
@@ -240,7 +217,13 @@ To see the results, visit http://localhost:3100. Here is what a successful run l
 
 Tabletop Manoa supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs](https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs). 
 
-## Development History
+## Meteor Hosting
+Galaxy is a cloud platfom for Meteor apps, based on Docker and AWS cloud infrastructure. This program has a running deployment on the
+[Galaxy](https://galaxy.meteor.com/app/tabletopmanoa.meteorapp.com) 
+
+![image](https://cloud.githubusercontent.com/assets/17040099/24992298/5bb9934c-1fbc-11e7-9501-afda2a9d8706.png)
+
+# Development History
 The development process for Tabletop Manoa consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
 
 The following sections document the development history of Tabletop Manoa.
@@ -275,9 +258,7 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24992142/77364878-1fbb-11e7-8b6e-9ed4bf697330.png)
 
-Once this milestone was complete, the program was deployed on [Galaxy](https://galaxy.meteor.com/app/tabletopmanoa.meteorapp.com) 
-
-![image](https://cloud.githubusercontent.com/assets/17040099/24992298/5bb9934c-1fbc-11e7-9501-afda2a9d8706.png)
+Once this milestone was complete, the program was deployed on [Galaxy](#meteor-hosting)
 
 ## Milestone 2: Data model development
 
