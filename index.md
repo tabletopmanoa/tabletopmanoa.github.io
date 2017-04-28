@@ -67,6 +67,7 @@ Calendar shows all games planned in the month. Allows user to browse by date. If
 # Developers Guide
    
   ## Downloading and Installation
+  
 First, [install Meteor](https://www.meteor.com/install).
 
 Second, [download a copy of tabletopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/), or clone it using git.
