@@ -17,9 +17,6 @@
     * [ESLint](#eslint)
     * [Data model unit tests](#data-model-unit-tests)
     * [JSDoc](#JSDoc) [Quality Assurance](#quality-assurance)
-    * [ESLint](#eslint)
-    * [Data model unit tests](#data-model-unit-tests)
-    * [JSDoc](#JSDoc)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Database development](#milestone-2-database-development)
@@ -158,8 +155,6 @@ Any part of the system that manipulates the Tabletop Manoa data model imports th
 
 There are many common operations on MongoDB collections. To simplify the implementation, the GamesCollection and UsertoGamesCollection classes inherit from the [BaseCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/base/BaseCollection.js) class.
 
-The [BaseUtilities](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/base/BaseUtilities.js) file contains functions that operate across both classes. 
-
 Both GamesCollection and UsertoGamesCollection have Mocha unit tests in [GamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.test.js) and [UsertoGamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.test.js).
 
 You can run these tests using the following command:
@@ -185,7 +180,7 @@ For display and navigation among its four pages, the application uses [Flow Rout
 
 Routing is defined in [imports/startup/client/router.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/startup/client/router.js).
 
-BowFolios defines the following routes:
+TableTop Mana defines the following routes:
 
   * The `/` route goes to the public landing page.
   * The `/directory` route goes to the public directory page.
@@ -199,7 +194,7 @@ For authentication, the application uses the University of Hawaii CAS test serve
 
 When the application is run, the CAS configuration information must be present in a configuration file such as  [config/settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/config/settings.development.json). 
 
-Anyone with a UH account can login and use BowFolio to create a portfolio.  A profile document is created for them if none already exists for that username.
+Anyone with a UH account can login and use Tabletop Manoa to create a portfolio.  A profile document is created for them if none already exists for that username.
 
 ## Authorization
 
@@ -213,7 +208,7 @@ The application implements template-based authorization using an If_Authorized t
 
 ## Configuration
 
-The [config](https://github.com/bowfolios/bowfolios/tree/master/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/config).
+The [config]( https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/config).
 
 The [.gitignore](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
 
@@ -221,13 +216,13 @@ TableTop manoa checks on startup to see if it has an empty database in [initiali
 
 
 
-For development purposes, a sample initialization for this database is in [initial-collection-data.json](https://github.com/bowfolios/bowfolios/blob/master/app/private/database/initial-collection-data.json).
+For development purposes, a sample initialization for this database is in [initial-collection-data.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/private/database/initial-collection-data.json).
 
 ## Quality Assurance
 
 ### ESLint
 
-BowFolios includes a [.eslintrc](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+Tabletop Manoa includes a [.eslintrc](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
 ```
 meteor npm run lint
@@ -239,7 +234,7 @@ It's significantly easier to do development with ESLint integrated directly into
 
 ### Data model unit tests
 
-BowFolios includes unit tests for the data model. You can invoke them with:
+Tabletop Manoa includes unit tests for the data model. You can invoke them with:
 
 ```
 meteor npm run test-watch
@@ -247,11 +242,11 @@ meteor npm run test-watch
 
 To see the results, visit http://localhost:3100. Here is what a successful run looks like:
  
-![](instert image url)
+![](insert image url)
 
 ### JSDoc
 
-BowFolios supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs](https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs). 
+Tabletop Manoa supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs](https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs). 
 
 ## Development History
 The development process for Tabletop Manoa consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
@@ -294,7 +289,7 @@ Once this milestone was complete, the program was deployed on [Galaxy](https://g
 
 ## Milestone 2: Data model development
 
-This milestone started on April 13, 2017 and ended April 25, 2017.
+This milestone started on April 13, 2017 and ended April 27, 2017.
 
 The goal of Milestone 2 is to implement the database model: the underlying set of Mongo Collections and the operations upon them that would support the Tabletop Manoa application.  We constructed the data model as a set of Javascript classes. The GamesCollection and CategoryCollection classes provide the persistent data structures useful for Tabletop Manoa. 
  
