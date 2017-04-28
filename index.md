@@ -297,6 +297,19 @@ For this milestone, we also created a set of mocha tests for the data model clas
 
 Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
 
-Milestone 2 consists of six issues, and progress is being managed via the [Tabletop Manoa Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
+![image](https://cloud.githubusercontent.com/assets/17040099/25521495/8b37bf6e-2b9b-11e7-95ef-6e45b4765139.png)
+
+Milestone 2 consists of nine issues, and progress is being managed via the [Tabletop Manoa Project M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/2):
+
+![image](https://cloud.githubusercontent.com/assets/17040099/25521464/68319008-2b9b-11e7-9313-a7fea2298224.png)
+
+Each issue was implemented in its own branch, and merged into master when completed:
+
+![image](https://cloud.githubusercontent.com/assets/17040099/25521750/899adc30-2b9c-11e7-9003-0614b1d26aec.png)
+
+Once the database was complete, the program was run through [ESLint](#eslint) to verify that the code conforms to proper formatting standards.
+
+![image](https://cloud.githubusercontent.com/assets/17040099/25522019/48e4d3ac-2b9d-11e7-83c0-bd25c8b74f1a.png)
+
 
 
