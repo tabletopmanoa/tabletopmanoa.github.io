@@ -2,12 +2,12 @@
 * [About TableTop Manoa](#about-tabletop-manoa)
 * [Project Goals](#project-goals)
 * [Database](#database)
-* [Installation](#installation-notes)
+* [Installation](#installation)
 * [Application design](#application-design)
   * [Directory structure](#directory-structure)
   * [Import conventions](#import-conventions)
   * [Naming conventions](#naming-conventions)
-  * [Data model](#data-model)
+  * [Data Model](#data-model)
   * [CSS](#css)
   * [Routing](#routing)
   * [Authentication](#authentication)
@@ -19,7 +19,7 @@
     * [JSDoc](#JSDoc) [Quality Assurance](#quality-assurance)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
-  * [Milestone 2: Database development](#milestone-2-database-development)
+  * [Milestone 2: Data model development](#milestone-2-data-model-development)
 
   
 ## About Tabletop Manoa
@@ -88,7 +88,7 @@ Calendar shows all games planned in the month. Allows user to browse by date. If
   * UserID (Defined by UH)
   * Game ID
   
-  ## Installation Notes: 
+  ## Installation 
 First, [install Meteor](https://www.meteor.com/install).
 
 Second, [download a copy of tabletopmanoa](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/), or clone it using git.
@@ -147,7 +147,7 @@ This system adopts the following naming conventions:
 
   
 
-## Data model unit tests
+## Data Model
 
 The TableTop Manoa data model is implemented by two Javascript classes: [GamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.js) and [UsertoGamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.js). Both of these classes use a MongoDB collection with the same name and export a single variable (Games and UsertoGames)that provides access to that collection. 
 
