@@ -79,7 +79,7 @@ Calendar shows all games planned in the month. Allows user to browse by date. If
   * Game ID
   * Creator User ID (Defined by UH)
   * System
-  * Reoccuring (true/false)
+  * Reoccurring (true/false)
   * Date
   * Time
   
@@ -123,17 +123,17 @@ app/        # holds the Meteor application sources
 config/     # holds configuration files, such as settings.development.json
 .gitignore  # don't commit IntelliJ project files, node_modules, and settings.production.json
 ```
-This structure separates configuration files (such as the settings files) in the config/ directory from the actual Meteor application in the app/ directory.
+The configuration files are seperated in the config/ directory from the actual Meteor application in the app/ directory.
 
 The app/ directory will be discussed in depth upon project completion
 
 ## Import conventions
 
-This system adheres to the Meteor 1.4 guideline of putting all application code in the imports/ directory, and using client/main.js and server/main.js to import the code appropriate for the client and server in an appropriate order.
+Following the Meteor 1.4 guidlines, all the application codes have been filed in the  imports/ directory, with client/main.js and server/main.js used to import the code for the client and server.
 
-This system accomplishes client and server-side importing in a different manner than most Meteor sample applications. In this system, every imports/ subdirectory containing any Javascript or HTML files has a top-level index.js file that is responsible for importing all files in its associated directory.   
+Every imports/ subdirectory containing any Javascript or HTML files has a top-level index.js file that is responsible for importing all files in its associated directory.   
 
-Then, client/main.js and server/main.js are responsible for importing all the directories containing code they need. An expample will be used once the project is complete.
+The client/main.js and server/main.js are responsible for importing all the directories containing code they need. An example will be used once the project is complete.
 
 ## Naming conventions
 
@@ -149,7 +149,7 @@ This system adopts the following naming conventions:
 
 ## Data model
 
-The TableTop Manoa data model is implemented by two Javascript classes: [GamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.js) and [UsertoGamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.js). Both of these classes encapsulate a MongoDB collection with the same name and export a single variable (Games and UsertoGames)that provides access to that collection. 
+The TableTop Manoa data model is implemented by two Javascript classes: [GamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.js) and [UsertoGamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.js). Both of these classes use a MongoDB collection with the same name and export a single variable (Games and UsertoGames)that provides access to that collection. 
 
 Any part of the system that manipulates the Tabletop Manoa data model imports the Games or UsertoGames variable, and invokes methods of that class to get or set data.
 
