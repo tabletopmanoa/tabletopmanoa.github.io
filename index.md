@@ -242,7 +242,7 @@ meteor npm run test-watch
 
 To see the results, visit http://localhost:3100. Here is what a successful run looks like:
  
-![](insert image url)
+![image](https://cloud.githubusercontent.com/assets/17040099/25522661/7b8a0e60-2b9f-11e7-87cb-07b122216368.png)
 
 ### JSDoc
 
@@ -295,7 +295,7 @@ The goal of Milestone 2 is to implement the database model: the underlying set o
  
 For this milestone, we also created a set of mocha tests for the data model classes. These tests ensured that we can create, manipulate, and delete the data model documents successfully. The record of this test is documented in the [Data model unit tests](#data-model-unit-tests) section above.
 
-Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aopen+is%3Aissue+milestone%3AM2)::
+Milestone 2 is implemented as [Tabletop Manoa Milestone M2](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/issues?q=is%3Aissue+milestone%3AM2+is%3Aclosed)::
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/25521495/8b37bf6e-2b9b-11e7-95ef-6e45b4765139.png)
 
