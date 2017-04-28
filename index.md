@@ -20,6 +20,7 @@
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Data model development](#milestone-2-data-model-development)
+  * [Milestone 3: Connect UI to data model](#milestone-3-connect-ui-to-data-model)
 
   
 ## About Tabletop Manoa
@@ -302,5 +303,15 @@ Once the database was complete, the program was run through [ESLint](#eslint) to
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/25522019/48e4d3ac-2b9d-11e7-83c0-bd25c8b74f1a.png)
 
+## Milestone 3: Connect UI to data model
+
+This milestone started on April 27, 2017 and is scheduled to end May 9, 2017.
+
+The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions. We used the form control templates from meteor-example-form to simplify implementation of form processing.
+
+Milestone 3 is implemented as [Tabletop Manoa Milestone M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/milestone/3)::
+
+
+Milestone 3 consists of seven issues, and progress is being managed via the [Tabletop Manoa Project M3)](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
 
 
