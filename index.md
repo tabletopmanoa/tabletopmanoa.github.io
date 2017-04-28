@@ -4,15 +4,15 @@
 * [Developers Guide](#developers-guide)
   * [Downloading and Installation](#downloading-and-installation)
   * [Application design](#application-design)
-  * [Directory structure](#directory-structure)
-  * [Import conventions](#import-conventions)
-  * [Naming conventions](#naming-conventions)
-  * [Data Model](#data-model)
-  * [CSS](#css)
-  * [Routing](#routing)
-  * [Authentication](#authentication)
-  * [Authorization](#authorization)
-  * [Configuration](#configuration)
+    * [Directory structure](#directory-structure)
+    * [Import conventions](#import-conventions)
+    * [Naming conventions](#naming-conventions)
+    * [Data Model](#data-model)
+    * [CSS](#css)
+    * [Routing](#routing)
+    * [Authentication](#authentication)
+    * [Authorization](#authorization)
+    * [Configuration](#configuration)
   * [Quality Assurance](#quality-assurance)
     * [ESLint](#eslint)
     * [Data model unit tests](#data-model-unit-tests)
@@ -31,36 +31,36 @@ from Monopoly and Spades to WarMachine and Pathfinder.
 
 # User Guide
 
-### Landing Platform
+## Landing Platform
 Anyone with a UH account can login with the login button
 <img src="../projectImages/landingPage.jpg">
 
 
-### Login Page
+## Login Page
 Access granted only to students. Allows students comfort in knowing the general demographic of the other players
 ![image](https://cloud.githubusercontent.com/assets/17040099/24215014/7f8513f6-0edb-11e7-9885-ae784b995aca.png)
 
 
-### Home Page
+## Home Page
 Welcome for users and instructions
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744263/1f7f18c6-1a4d-11e7-9740-2d0928f52e1b.png)
 
 
-### Manage Games
+## Manage Games
 If users are following a game, the link will be here. Also would be the information on games they are in charge of.
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744277/2fbb2ce8-1a4d-11e7-97bb-158c303cdb91.png)
 
-### Coordinate a Game
+## Coordinate a Game
 Allows a student to set up their own games. Would like the 'meeting date' to be similar to the scheduling app on Google Calendar (calendar dropdown, recurrence option with day of week, clock selection)
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744301/48e1d244-1a4d-11e7-83bb-d420dfd23111.png)
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744330/632d3346-1a4d-11e7-8a8b-ff0925193261.png)
 
 
-### Browse Games 
+## Browse Games 
 Four main categories of the games allows users to select all. Games that are active (not past their play date) in the selected categories should pop up. Selecting the game will give detailed information on the game (the information filled out from coordinate game) and the user can save the game (which will allow for an email push)
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744364/828a8fcc-1a4d-11e7-95e0-4201a4f3d449.png)
 
-### Calendar
+## Calendar
 Calendar shows all games planned in the month. Allows user to browse by date. If overcrowding of events occur, calendar will be separated by category and then game. Initially all games should be shown to prevent the site from looking too 'empty'.
 ![image](https://cloud.githubusercontent.com/assets/17040099/24744382/93a5dc44-1a4d-11e7-98c8-9d595a8f0e0a.png)
 
@@ -90,9 +90,9 @@ $ meteor npm run start
 ```
 
   
-# Application Design
+## Application Design
 
-## Directory structure
+### Directory structure
 
 The top-level directory structure contains:
 
@@ -105,7 +105,7 @@ The configuration files are seperated in the config/ directory from the actual M
 
 The app/ directory will be discussed in depth upon project completion
 
-## Import conventions
+### Import conventions
 
 Following the Meteor 1.4 guidlines, all the application codes have been filed in the  imports/ directory, with client/main.js and server/main.js used to import the code for the client and server.
 
@@ -113,7 +113,7 @@ Every imports/ subdirectory containing any Javascript or HTML files has a top-le
 
 The client/main.js and server/main.js are responsible for importing all the directories containing code they need. An example will be used once the project is complete.
 
-## Naming conventions
+### Naming conventions
 
 This system adopts the following naming conventions:
 
@@ -125,7 +125,7 @@ This system adopts the following naming conventions:
 
   
 
-## Data Model
+### Data Model
 
 The TableTop Manoa data model is implemented by two Javascript classes: [GamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.js) and [UsertoGamesCollection](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.js). Both of these classes use a MongoDB collection with the same name and export a single variable (Games and UsertoGames)that provides access to that collection. 
 
@@ -135,7 +135,7 @@ There are many common operations on MongoDB collections. To simplify the impleme
 
 Both GamesCollection and UsertoGamesCollection have Mocha unit tests in [GamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/GameCollection.test.js) and [UsertoGamesCollection.test.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/api/games/UserToGamesCollection.test.js).
 
-## CSS
+### CSS
 
 The application uses the [Semantic UI](http://semantic-ui.com/) CSS framework. 
 
@@ -143,7 +143,7 @@ The Semantic UI theme files are located in [app/client/lib/semantic-ui](https://
 
 Note that the user pages contain a menu fixed to the top of the page, and thus the body element needs to have padding attached to it.  However, the landing page does not have a menu, and thus no padding should be attached to the body element on that page. To accomplish this, the [router](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/startup/client/router.js) uses "triggers" to add an remove the appropriate classes from the body element when a page is visited and then left by the user. 
 
-## Routing
+### Routing
 
 For display and navigation among its four pages, the application uses [Flow Router](https://github.com/kadirahq/flow-router).
 
@@ -157,7 +157,7 @@ TableTop Mana defines the following routes:
   * The `/<user>/filter` route goes to the filter page associated with `<user>`, which is the UH account name.
 
 
-## Authentication
+### Authentication
 
 For authentication, the application uses the University of Hawaii CAS test server, and follows the approach shown in [meteor-example-uh-cas](http://ics-software-engineering.github.io/meteor-example-uh-cas/).
 
@@ -165,7 +165,7 @@ When the application is run, the CAS configuration information must be present i
 
 Anyone with a UH account can login and use Tabletop Manoa to create a portfolio.  A profile document is created for them if none already exists for that username.
 
-## Authorization
+### Authorization
 
 The landing and directory pages are public; anyone can access those pages.
 
@@ -175,7 +175,7 @@ To prevent people from accessing pages they are not authorized to visit, templat
 
 The application implements template-based authorization using an If_Authorized template, defined in [If_Authorized.html](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/ui/layouts/user/if-authorized.html) and [If_Authorized.js](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/ui/layouts/user/if-authorized.js).
 
-## Configuration
+### Configuration
 
 The [config]( https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/config).
 
@@ -228,7 +228,7 @@ The development process for Tabletop Manoa consists of a sequence of Milestones.
 
 The following sections document the development history of Tabletop Manoa.
 
-### Milestone 1: Mockup Development
+## Milestone 1: Mockup Development
 
 This milestone started on Apr 4, 2017 and ended on Apr 13, 2017.
 
