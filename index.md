@@ -16,8 +16,9 @@
   * [Quality Assurance](#quality-assurance)
     * [ESLint](#eslint)
     * [Data model unit tests](#data-model-unit-tests)
-    * [JSDoc](#JSDoc) [Quality Assurance](#quality-assurance)
-    * [Initial User Studies](#IUS)
+    * [JSDoc](#JSDoc) 
+    * [Quality Assurance](#quality-assurance)
+    * [Initial User Studies](#initial-user-studies)
   * [Meteor Hosting](#meteor-hosting)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
@@ -234,6 +235,25 @@ Our initial user studies were performed individually on five seperate individual
 ** User Requested Improvements: ** The user requested that the required fields of the add page where signified by some marker. The user also requested that there was a a way to gain more information about the games, like who is playing. 
 
 
+### User B:
+
+**Major:** Travel Industry Management
+
+**Relationship to Tabletop Gaming:** Extensive Knowledge, runs a weekly game, plays frequently.
+
+** Ability to Use Application:** The user was able to log-in and join a game fairly easily. The user had some difficulty finding out how they were supposed to add a game that they wanted to run. After around a minute of looking they were able to find the button. This negative effect of having to search for this button, left them in a poor mood while attempting to use the add game page. 
+
+** User Requested Improvements: ** The user was annoyed that the log in required a pop-up. After further questioning, it was revealed that the pop-up had a negative instinctual feel. This user also shared the sentiment that there was not enough information given about the game. The user also requested that an "Add game" button be moved to the navigation menu, so it was more visable. 
+
+### User C:
+
+**Major:** Graduated
+
+**Relationship to Tabletop Gaming:** Has played card games.
+
+** Ability to Use Application:** This user was able to use the application fairly easily, but repeatedly mentioned that they were unsure what a lot of the things mentioned in the application were. He mentioned that the application was a little unfriendly to people who weren't so accustomed to table-top games. He was delighted to use the add game-page after finding out that it included games he was familiar with like monopoly. 
+
+** User Requested Improvements: ** This user requested that the sight added more features or images relating to card games or games that normal people might be familiar with. 
 
 ## Meteor Hosting
 Galaxy is a cloud platfom for Meteor apps, based on Docker and AWS cloud infrastructure. This program has a running deployment on the
