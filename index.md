@@ -17,6 +17,7 @@
     * [ESLint](#eslint)
     * [Data model unit tests](#data-model-unit-tests)
     * [JSDoc](#JSDoc) [Quality Assurance](#quality-assurance)
+    * [Initial User Studies](#IUS)
   * [Meteor Hosting](#meteor-hosting)
 * [Development History](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
@@ -217,6 +218,22 @@ To see the results, visit http://localhost:3100. Here is what a successful run l
 ### JSDoc
 
 Tabletop Manoa supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs](https://github.com/tabletopmanoa/tabletopmanoa.github.io/tree/master/jsdocs). 
+
+## Initial User Studies 
+
+Our initial user studies were performed individually on five seperate individuals, who ranged in both computer ability and tabletop knowledge. The users participated in a willing HCI style walkthrough, in which the users were asked to use the application to perform certain tasks. The users were asked to talk through their thought process while they used the application, to allow the survey taker to have a greater idea of where faults in the design might be. Afterwards the users were asked to state their thoughts on using the program and improvements that could be made. Users will be listed as letters to retain anonymity. 
+
+### User A:
+
+**Major:** Animal Science
+
+**Relationship to Tabletop Gaming:** Extensive knowledge, plays weekly. 
+
+** Ability to Use Application:** The user was able to navigate through the pages and use them fairly easily. The user was able to add a game they wanted to play to their list and then remove it afterwards. The user was able to create a game but made a notable error, in which she attempted multiple times to complete the form without all required text boxes being filled. It is important to note that the calendar was not finished at the time of this users testing, so she was unable to test this part of the application.
+
+** User Requested Improvements: ** The user requested that the required fields of the add page where signified by some marker. The user also requested that there was a a way to gain more information about the games, like who is playing. 
+
+
 
 ## Meteor Hosting
 Galaxy is a cloud platfom for Meteor apps, based on Docker and AWS cloud infrastructure. This program has a running deployment on the
