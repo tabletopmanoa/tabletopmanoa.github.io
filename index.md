@@ -230,9 +230,9 @@ Our initial user studies were performed individually on five seperate individual
 
 **Relationship to Tabletop Gaming:** Extensive knowledge, plays weekly. 
 
-** Ability to Use Application:** The user was able to navigate through the pages and use them fairly easily. The user was able to add a game they wanted to play to their list and then remove it afterwards. The user was able to create a game but made a notable error, in which she attempted multiple times to complete the form without all required text boxes being filled. It is important to note that the calendar was not finished at the time of this users testing, so she was unable to test this part of the application.
+**Ability to Use Application:** The user was able to navigate through the pages and use them fairly easily. The user was able to add a game they wanted to play to their list and then remove it afterwards. The user was able to create a game but made a notable error, in which she attempted multiple times to complete the form without all required text boxes being filled. It is important to note that the calendar was not finished at the time of this users testing, so she was unable to test this part of the application.
 
-** User Requested Improvements: ** The user requested that the required fields of the add page where signified by some marker. The user also requested that there was a a way to gain more information about the games, like who is playing. 
+**User Requested Improvements:** The user requested that the required fields of the add page where signified by some marker. The user also requested that there was a a way to gain more information about the games, like who is playing. 
 
 
 ### User B:
@@ -241,9 +241,9 @@ Our initial user studies were performed individually on five seperate individual
 
 **Relationship to Tabletop Gaming:** Extensive Knowledge, runs a weekly game, plays frequently.
 
-** Ability to Use Application:** The user was able to log-in and join a game fairly easily. The user had some difficulty finding out how they were supposed to add a game that they wanted to run. After around a minute of looking they were able to find the button. This negative effect of having to search for this button, left them in a poor mood while attempting to use the add game page. 
+**Ability to Use Application:** The user was able to log-in and join a game fairly easily. The user had some difficulty finding out how they were supposed to add a game that they wanted to run. After around a minute of looking they were able to find the button. This negative effect of having to search for this button, left them in a poor mood while attempting to use the add game page. 
 
-** User Requested Improvements: ** The user was annoyed that the log in required a pop-up. After further questioning, it was revealed that the pop-up had a negative instinctual feel. This user also shared the sentiment that there was not enough information given about the game. The user also requested that an "Add game" button be moved to the navigation menu, so it was more visable. 
+**User Requested Improvements:** The user was annoyed that the log in required a pop-up. After further questioning, it was revealed that the pop-up had a negative instinctual feel. This user also shared the sentiment that there was not enough information given about the game. The user also requested that an "Add game" button be moved to the navigation menu, so it was more visable. 
 
 ### User C:
 
@@ -251,9 +251,9 @@ Our initial user studies were performed individually on five seperate individual
 
 **Relationship to Tabletop Gaming:** Has played card games.
 
-** Ability to Use Application:** This user was able to use the application fairly easily, but repeatedly mentioned that they were unsure what a lot of the things mentioned in the application were. He mentioned that the application was a little unfriendly to people who weren't so accustomed to table-top games. He was delighted to use the add game-page after finding out that it included games he was familiar with like monopoly. 
+**Ability to Use Application:** This user was able to use the application fairly easily, but repeatedly mentioned that they were unsure what a lot of the things mentioned in the application were. He mentioned that the application was a little unfriendly to people who weren't so accustomed to table-top games. He was delighted to use the add game-page after finding out that it included games he was familiar with like monopoly. 
 
-** User Requested Improvements: ** This user requested that the sight added more features or images relating to card games or games that normal people might be familiar with. 
+**User Requested Improvements:** This user requested that the sight added more features or images relating to card games or games that normal people might be familiar with. 
 
 ## Meteor Hosting
 Galaxy is a cloud platfom for Meteor apps, based on Docker and AWS cloud infrastructure. This program has a running deployment on the
