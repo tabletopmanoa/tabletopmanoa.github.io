@@ -355,14 +355,14 @@ Once the database was complete, the program was run through [ESLint](#eslint) to
 
 ## Milestone 3: Connect UI to data model
 
-This milestone started on April 27, 2017 and is scheduled to end May 9, 2017.
+This milestone started on April 27, 2017 and ended May 9, 2017.
 
-The goal of Milestone 3 is to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we will create Javascript files for the templates with helper functions. We shall use the form control templates from meteor-example-form to simplify implementation of form processing.
+The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions.
 
 Milestone 3 was implemented as [Tabletop Manoa Milestone M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/milestone/3)::
 ![image](https://cloud.githubusercontent.com/assets/17040099/25887188/b5abcfb4-34fc-11e7-98d6-f973675fd274.png)
 
-Milestone 3 consists of 16 issues, and progress was managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
+Milestone 3 consisted of 16 issues, and progress was managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
 ![image](https://cloud.githubusercontent.com/assets/17040099/25887162/9289c608-34fc-11e7-9de2-3e86c5dd38ad.png)
 
 Each issue was implemented in its own branch, and merged into master when completed:
