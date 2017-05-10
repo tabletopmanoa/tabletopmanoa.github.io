@@ -360,10 +360,10 @@ This milestone started on April 27, 2017 and ended May 9, 2017.
 The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions.
 
 Milestone 3 was implemented as [Tabletop Manoa Milestone M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/milestone/3)::
-![image](https://cloud.githubusercontent.com/assets/17040099/25887188/b5abcfb4-34fc-11e7-98d6-f973675fd274.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/25887615/863d82f2-34fe-11e7-87ea-c876a1e743c6.png)
 
-Milestone 3 consisted of 16 issues, and progress was managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
-![image](https://cloud.githubusercontent.com/assets/17040099/25887162/9289c608-34fc-11e7-9de2-3e86c5dd38ad.png)
+Milestone 3 consisted of 24 issues, and progress was managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
+![image](https://cloud.githubusercontent.com/assets/17040099/25887730/f814c9d0-34fe-11e7-8f58-5125dd1c01fd.png)
 
 Each issue was implemented in its own branch, and merged into master when completed:
 ![image](https://cloud.githubusercontent.com/assets/17040099/25887077/44a44bac-34fc-11e7-8d50-f0fe9061c08a.png)
