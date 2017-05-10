@@ -92,18 +92,11 @@ Third, cd into the app/ directory and install libraries with:
 $ meteor npm install
 ```
 
-Fourth, install the calendar
-
-```
-$ meteor add rzymek:fullcalendar
-```
-
-Fifth, run the system with:
+Fourth, run the system with:
 
 ```
 $ meteor npm run start
 ```
-
   
 ## Application Design
 
@@ -126,7 +119,33 @@ Following the Meteor 1.4 guidlines, all the application codes have been filed in
 
 Every imports/ subdirectory containing any Javascript or HTML files has a top-level index.js file that is responsible for importing all files in its associated directory.   
 
-The client/main.js and server/main.js are responsible for importing all the directories containing code they need. An example will be used once the project is complete.
+The client/main.js and server/main.js are responsible for importing all the directories containing code they need. 
+```
+client/
+  lib/           # holds Semantic UI files.
+  head.html      # the <head>
+  main.js        # import all the client-side html and js files. 
+
+imports/
+  api/           # Define collection processing code (client + server side)
+    
+  startup/       # Define code to run when system starts up (client-only, server-only)
+        
+  ui/
+    components/  # templates that appear inside a page template.
+    layouts/     # Layouts contain common elements to all pages (i.e. menubar and footer)
+    pages/       # Pages are navigated to by FlowRouter routes.
+    stylesheets/ # CSS customizations, if any.
+
+node_modules/    # managed by Meteor
+
+public/          
+  images/        # holds static images for landing page and predefined sample users.
+  
+server/
+   main.js       # import all the server-side js files.
+```
+
 
 ### Naming conventions
 
@@ -154,7 +173,7 @@ Both GamesCollection and UsertoGamesCollection have Mocha unit tests in [GamesCo
 
 The application uses the [Semantic UI](http://semantic-ui.com/) CSS framework. 
 
-The Semantic UI theme files are located in [app/client/lib/semantic-ui](https://github.com/ics-software-engineering/meteor-application-template/tree/master/app/client/lib/semantic-ui) directory. Because they are located in the client/ directory and not the imports/ directory, they do not need to be explicitly imported to be loaded. (Meteor automatically loads all files into the client that are located in the client/ directory). 
+The Semantic UI theme files are located in [app/client/lib/semantic-ui](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/tree/master/app/client/lib/semantic-ui) directory. Because they are located in the client/ directory and not the imports/ directory, they do not need to be explicitly imported to be loaded. (Meteor automatically loads all files into the client that are located in the client/ directory). 
 
 Note that the user pages contain a menu fixed to the top of the page, and thus the body element needs to have padding attached to it.  However, the landing page does not have a menu, and thus no padding should be attached to the body element on that page. To accomplish this, the [router](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/blob/master/app/imports/startup/client/router.js) uses "triggers" to add an remove the appropriate classes from the body element when a page is visited and then left by the user. 
 
@@ -234,7 +253,7 @@ Tabletop Manoa supports documentation generation with [JSDoc](http://usejsdoc.or
 
 ## Initial User Studies 
 
-Our initial user studies were performed individually on five seperate individuals, who ranged in both computer ability and tabletop knowledge. The users participated in a willing HCI style walkthrough, in which the users were asked to use the application to perform certain tasks. The users were asked to talk through their thought process while they used the application, to allow the survey taker to have a greater idea of where faults in the design might be. Afterwards the users were asked to state their thoughts on using the program and improvements that could be made. Users will be listed as letters to retain anonymity. 
+Our initial user studies were performed individually on five separate individuals, who ranged in both computer ability and tabletop knowledge. The users participated in a willing HCI style walkthrough, in which the users were asked to use the application to perform certain tasks. The users were asked to talk through their thought process while they used the application, to allow the survey taker to have a greater idea of where faults in the design might be. Afterwards the users were asked to state their thoughts on using the program and improvements that could be made. Users will be listed as letters to retain anonymity.
 
 ### User A:
 
@@ -340,9 +359,16 @@ This milestone started on April 27, 2017 and is scheduled to end May 9, 2017.
 
 The goal of Milestone 3 is to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we will create Javascript files for the templates with helper functions. We shall use the form control templates from meteor-example-form to simplify implementation of form processing.
 
-Milestone 3 is implemented as [Tabletop Manoa Milestone M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/milestone/3)::
+Milestone 3 was implemented as [Tabletop Manoa Milestone M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/milestone/3)::
+![image](https://cloud.githubusercontent.com/assets/17040099/25887188/b5abcfb4-34fc-11e7-98d6-f973675fd274.png)
 
+Milestone 3 consists of 16 issues, and progress was managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
+![image](https://cloud.githubusercontent.com/assets/17040099/25887162/9289c608-34fc-11e7-9de2-3e86c5dd38ad.png)
 
-Milestone 3 consists of seven issues, and progress is being managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
+Each issue was implemented in its own branch, and merged into master when completed:
+![image](https://cloud.githubusercontent.com/assets/17040099/25887077/44a44bac-34fc-11e7-8d50-f0fe9061c08a.png)
 
+Once the database was complete, the program was run through [ESLint](#eslint) to verify that the code conforms to proper formatting standards.
+![image](https://cloud.githubusercontent.com/assets/17040099/25522019/48e4d3ac-2b9d-11e7-83c0-bd25c8b74f1a.png)
 
+Once this milestone was complete, the program was deployed on [Galaxy](#meteor-hosting)
