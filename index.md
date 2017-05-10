@@ -363,7 +363,7 @@ Milestone 3 was implemented as [Tabletop Manoa Milestone M3](https://github.com/
 ![image](https://cloud.githubusercontent.com/assets/17040099/25887615/863d82f2-34fe-11e7-87ea-c876a1e743c6.png)
 
 Milestone 3 consisted of 24 issues, and progress was managed via the [Tabletop Manoa Project M3](https://github.com/tabletopmanoa/Tabletop-Manoa-Website/projects/3)
-![image](https://cloud.githubusercontent.com/assets/17040099/25887730/f814c9d0-34fe-11e7-8f58-5125dd1c01fd.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/25887785/2ff2b998-34ff-11e7-98b2-3ee4caf42a73.png)
 
 Each issue was implemented in its own branch, and merged into master when completed:
 ![image](https://cloud.githubusercontent.com/assets/17040099/25887077/44a44bac-34fc-11e7-8d50-f0fe9061c08a.png)
