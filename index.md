@@ -391,4 +391,4 @@ Each issue was implemented in its own branch, and merged into master when comple
 Once the database was complete, the program was run through [ESLint](#eslint) to verify that the code conforms to proper formatting standards.
 ![image](https://cloud.githubusercontent.com/assets/17040099/25522019/48e4d3ac-2b9d-11e7-83c0-bd25c8b74f1a.png)
 
-Once this milestone was complete, the program was deployed on [Galaxy](#meteor-hosting)
+Once this milestone was complete, the program was deployed on [Galaxy](#meteor-hosting). That program can be seen [here](http://tabletopmanoa.meteorapp.com/).
