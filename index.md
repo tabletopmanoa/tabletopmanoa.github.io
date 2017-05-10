@@ -286,6 +286,26 @@ Our initial user studies were performed individually on five separate individual
 
 **User Requested Improvements:** This user requested that the sight added more features or images relating to card games or games that normal people might be familiar with. 
 
+### User D:
+
+**Major:** Political Science
+
+**Relationship to Tabletop Gaming:** Avid gamer of various types.
+
+**Ability to Use Application:** This user had no issue navigating the website. He thought the instructions on the home page were useful and the buttons made sense. He believed that the application should expand to include video games, as many college student would be interested in LAN parties. 
+
+**User Requested Improvements:** This user requested that the Role Playing seletion had an edition number dropdown menu. He also suggests that the miniature category have a point level. The Resource block in the Add Game menu was vague, and he recommended being more specific, and removing the requirement that it be a URL, as not all games have an online source. He also requested a delete button, so that the coordinater can cancel the game.
+
+### User E:
+
+**Major:** Nursing
+
+**Relationship to Tabletop Gaming:** Has played chess.
+
+**Ability to Use Application:** This user was a little confused as to all the requirments to coordinate a game. Not being familiar with tabletop games, she was not sure about what kind of information to produce to fill out the form. However, she did find reading the available games in the Browse Game and Info pages easy to understand. 
+
+**User Requested Improvements:** This user requested that the browse game be sorted in chronological order in their categories, and that the time be in 12 hour standard instead of 24 hour. She also did not like the smoking and drinking options within a college environment. She recommended the option of recurring games, and having the first available start time for a game be 0900 instead of 0100.
+
 ## Meteor Hosting
 Galaxy is a cloud platfom for Meteor apps, based on Docker and AWS cloud infrastructure. This program has a running deployment on the
 [Galaxy](https://galaxy.meteor.com/app/tabletopmanoa.meteorapp.com) 
