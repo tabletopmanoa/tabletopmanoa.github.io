@@ -34,7 +34,7 @@ from Monopoly and Spades to WarMachine and Pathfinder.
 # User Guide
 
 ## Landing Platform
-Anyone with a UH account can login with the login button
+This is the only page accessable to the public. This page tells the user what the website is about, and provides a login. Anyone with a UH account can login with the login button
 <img src="../projectImages/landingPage.jpg">
 
 
@@ -45,26 +45,38 @@ Access granted only to students. Allows students comfort in knowing the general 
 
 ## Home Page
 Welcome for users and instructions
-![image](https://cloud.githubusercontent.com/assets/17040099/24744263/1f7f18c6-1a4d-11e7-9740-2d0928f52e1b.png)
+![image](https://cloud.githubusercontent.com/assets/17040099/25884681/e1b43360-34ef-11e7-904d-0183efdc41b0.png)
 
 
 ## Manage Games
-If users are following a game, the link will be here. Also would be the information on games they are in charge of.
-![image](https://cloud.githubusercontent.com/assets/17040099/24744277/2fbb2ce8-1a4d-11e7-97bb-158c303cdb91.png)
+Displays information of games the user is coordinating, along with any game the user is joining in. The games the user signed to attend in also has the option for the user to cancel.
+![image](https://cloud.githubusercontent.com/assets/17040099/25884951/6839787c-34f1-11e7-9f4f-4daa6633f0b1.png)
 
 ## Coordinate a Game
-Allows a student to set up their own games. Would like the 'meeting date' to be similar to the scheduling app on Google Calendar (calendar dropdown, recurrence option with day of week, clock selection)
-![image](https://cloud.githubusercontent.com/assets/17040099/24744301/48e1d244-1a4d-11e7-83bb-d420dfd23111.png)
-![image](https://cloud.githubusercontent.com/assets/17040099/24744330/632d3346-1a4d-11e7-8a8b-ff0925193261.png)
+Allows a student to set up their own games. The games are sorted into 4 categories the user will choose from.
+![image](https://cloud.githubusercontent.com/assets/17040099/25885046/ee5b1974-34f1-11e7-8d01-7f221f29c3a5.png)
 
+The user will be fill out the rest of the table, to include any extra notes.
+![image](https://cloud.githubusercontent.com/assets/17040099/25885153/8e288ffe-34f2-11e7-88d9-4222777aa332.png)
 
-## Browse Games 
-Four main categories of the games allows users to select all. Games that are active (not past their play date) in the selected categories should pop up. Selecting the game will give detailed information on the game (the information filled out from coordinate game) and the user can save the game (which will allow for an email push)
-![image](https://cloud.githubusercontent.com/assets/17040099/24744364/828a8fcc-1a4d-11e7-95e0-4201a4f3d449.png)
+Once successful, a confirmation notice will appear.
+![image](https://cloud.githubusercontent.com/assets/17040099/25885165/a17ef9f8-34f2-11e7-8cc4-a52eda030614.png)
 
 ## Calendar
-Calendar shows all games planned in the month. Allows user to browse by date. If overcrowding of events occur, calendar will be separated by category and then game. Initially all games should be shown to prevent the site from looking too 'empty'.
-![image](https://cloud.githubusercontent.com/assets/17040099/24744382/93a5dc44-1a4d-11e7-98c8-9d595a8f0e0a.png)
+Calendar shows all games planned in the month. Allows user to browse by date. 
+![image](https://cloud.githubusercontent.com/assets/17040099/25885276/50d26bce-34f3-11e7-97db-78690a69b5cd.png)
+
+If the item on the calendar is selected, a notice about the information will pop up.
+![image](https://cloud.githubusercontent.com/assets/17040099/25885305/743aeafa-34f3-11e7-8efb-fdb6ba302579.png)
+
+## Browse Games 
+Four main categories of the games allows users to select all. Games that are from the selected categories will be filtered. Selecting the game will give detailed information on the game, and the user can join in on the game, which will track the amount of people signed up.
+![image](https://cloud.githubusercontent.com/assets/17040099/25885241/230e6c60-34f3-11e7-9319-82279e8691d1.png)
+
+## More Information
+This page will show all the additional information about the game. If the user chooses to join the game, the option is also available on this page.
+![image](https://cloud.githubusercontent.com/assets/17040099/25885369/b5a56b64-34f3-11e7-814b-779a9f80d5e5.png)
+
 
 # Developers Guide
    
